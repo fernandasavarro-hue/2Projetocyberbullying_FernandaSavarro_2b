@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combate ao Cyberbullying - Informação e Apoio</title>
+    <style>
+        :root {
+            --cor-primaria: #0d3b66;
+            --cor-secundaria: #faf0ca;
+            --cor-destaque: #f4d35e;
+            --cor-texto: #2b2d42;
+            --cor-fundo: #f4f5f7;
+            --cor-erro: #e63946;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            line-height: 1.6;
+        }
+
+        /* Acessibilidade: Link de salto para o conteúdo */
+        .pular-conteudo {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--cor-primaria);
+            color: #fff;
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+        .pular-conteudo:focus {
+            top: 0;
+        }
+
+        header {
+            background-color: var(--cor-primaria);
+            color: #fff;
+            padding: 2.5rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav {
+            background-color: #1d3557;
+            padding: 0.8rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:focus, nav a:hover {
+            color: var(--cor-destaque);
+            outline: 3px solid var(--cor-destaque);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: #fff;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--cor-primaria);
+            margin-bottom: 1rem;
+            font-size: 1.6rem;
+            border-bottom: 2px solid var(--cor-secundaria);
+            padding-bottom: 0.5rem;
+        }
+
+        p, ul {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .destaque-box {
+            background-color: var(--cor-secundaria);
+            border-left: 5px solid var(--cor-primaria);
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        /* Container de Mídia Responsiva */
+        .midia-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+            margin: 1.5rem 0;
+        }
+
+        figure {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        figcaption {
+            font-size: 0.85rem;
+            color: #555;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .btn-denuncia {
+            display: inline-block;
+            background-color: var(--cor-erro);
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .btn-denuncia:focus, .btn-denuncia:hover {
+            opacity: 0.9;
+            outline: 3px solid var(--cor-texto);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #2b2d42;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        /* Foco visível ajustado para acessibilidade */
+        a:focus {
+            outline: 3px solid var(--cor-primaria);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#conteudo-principal" class="pular-conteudo">Pular para o conteúdo principal</a>
+
+    <header>
+        <h1>Conscientização sobre o Cyberbullying</h1>
+        <p>Entenda, previna e saiba como combater a violência no ambiente virtual</p>
+    </header>
+
+    <nav aria-label="Menu principal">
+        <a href="#conceito">Conceito</a>
+        <a href="#causas">Causas</a>
+        <a href="#ia">Uso de IA</a>
+        <a href="#leis">Leis</a>
+        <a href="#solucoes">Soluções</a>
+    </nav>
+
+    <main id="conteudo-principal">
+        
+        <section id="conceito">
+            <h2>O que é Cyberbullying?</h2>
+            <p>O cyberbullying caracteriza-se pela prática de agressões, intimidações, humilhações ou perseguições sistemáticas contra alguém utilizando ambientes virtuais (redes sociais, aplicativos de mensagens ou jogos online). O efeito multiplicador da internet torna o dano contínuo e de grande proporção.</p>
+            
+            <div class="midia-container">
+                <figure>
+                    <!-- Imagem 1: Conceito e Reflexão Digital -->
+                    <img src="https://unsplash.com" alt="Ilustração de pessoa reflexiva diante de telas de computadores e smartphones simbolizando o ambiente digital.">
+                    <figcaption>O ambiente digital exige responsabilidade e respeito mútuo nas interações.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="causas">
+            <h2>Causas e Fatores de Risco</h2>
+            <p>As causas associadas a essa prática costumam envolver:</p>
+            <ul>
+                <li><strong>Anonimato aparente:</strong> A distância da tela encoraja comportamentos agressivos desinibidos.</li>
+                <li><strong>Cultura da impunidade:</strong> Falta de acompanhamento e limites claros no uso da tecnologia.</li>
+                <li><strong>Dificuldade de empatia:</strong> Inabilidade de mensurar o impacto psicológico da dor alheia à distância.</li>
+            </ul>
+
+            <div class="midia-container">
+                <figure>
+                    <!-- Imagem 2: Impacto Psicológico -->
+                    <img src="https://unsplash.com" alt="Jovem sentado sozinho expressando tristeza e isolamento ao segurar um telefone celular.">
+                    <figcaption>O isolamento e a ansiedade são consequências frequentes nas vítimas de assédio virtual.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="ia">
+            <h2>O papel da Inteligência Artificial (IA)</h2>
+            <p>A Inteligência Artificial atua dos dois lados do problema: por um lado, algoritmos mal utilizados ou deepfakes criam novos riscos; por outro, ferramentas de IA são fundamentais para <strong>detectar, moderar e ocultar discursos de ódio</strong> em tempo real nas redes sociais.</p>
+            
+            <div class="midia-container">
+                <div class="video-wrapper">
+                    <!-- Vídeo 1: Inteligência Artificial e Moderação -->
+                    <iframe src="https://youtube-nocookie.com" title="Vídeo explicativo sobre segurança na internet e o papel das tecnologias de monitoramento" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="leis">
+            <h2>Legislação e Punições no Brasil</h2>
+            <p>A <a href="https://planalto.gov.br" target="_blank" rel="noopener">Lei nº 14.811/2024</a> incluiu o crime de intimidação sistemática virtual (cyberbullying) no Código Penal brasileiro (Art. 146-A).</p>
+            <div class="destaque-box">
+                <p><strong>Punição prevista:</strong> Reclusão de 2 a 4 anos e multa, caso o ato não constitua crime mais grave.</p>
+            </div>
+        </section>
+
+        <section id="solucoes">
+            <h2>Soluções e Onde Denunciar</h2>
+            <p>Se você ou alguém que você conhece está sofrendo cyberbullying, siga estas orientações:</p>
+            <ul>
+                <li>Não responda às provocações para evitar engajamento.</li>
+                <li>Salve todas as provas tirando capturas de tela (prints) detalhadas.</li>
+                <li>Bloqueie os perfis envolvidos e use as ferramentas de denúncia da própria rede social.</li>
+                <li>Procure uma rede de apoio confiável (pais, professores ou psicólogos).</li>
+            </ul>
+            <p>Você pode relatar violações e crimes cibernéticos de forma segura aos canais oficiais:</p>
+            
+            <a href="https://www.gov.br" class="btn-denuncia" target="_blank" rel="noopener">Acessar o Disque 100 (Canal Oficial)</a>
+            
+            <div class="midia-container" style="margin-top: 2rem;">
+                <div class="video-wrapper">
+                    <!-- Vídeo 2: Guia de prevenção e como agir -->
